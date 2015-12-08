@@ -5,7 +5,7 @@ module.exports = function (argv, command) {
   input = input.join(' ');
   var flags = '';
   for (var i in argv) {
-    if (i !== '_') {
+    if (i !== '_' && argv[i]) {
       var value = Boolean(argv[i]) === argv[i] ? '' : ' ' + argv[i];
       flags += ' --' + i + value;
     }
