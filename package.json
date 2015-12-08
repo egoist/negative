@@ -1,0 +1,27 @@
+{
+  "name": "negative",
+  "version": "0.0.1",
+  "description": "Parse object to cli arguments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egoist/negative.git"
+  },
+  "keywords": [
+    "negative",
+    "cli",
+    "arg"
+  ],
+  "author": "EGOIST <0x142857@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egoist/negative/issues"
+  },
+  "homepage": "https://github.com/egoist/negative#readme",
+  "devDependencies": {
+    "ava": "^0.7.0"
+  }
+}
