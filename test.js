@@ -7,5 +7,5 @@ test('main', t => {
     x: 3,
     verbose: true
   };
-  t.same(negative(cli, 'mocha'), 'mocha init hello --x 3 --verbose');
+  t.same(negative(cli, 'mocha'), 'mocha init hello -x 3 --verbose');
 });

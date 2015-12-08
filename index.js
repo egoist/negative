@@ -7,7 +7,8 @@ module.exports = function (argv, command) {
   for (var i in argv) {
     if (i !== '_' && argv[i]) {
       var value = Boolean(argv[i]) === argv[i] ? '' : ' ' + argv[i];
-      flags += ' --' + i + value;
+      var dashes = '-'.repeat(i.length > 1 ? 2 : 1);
+      flags += ' ' + dashes + i + value;
     }
   }
   return command + input + flags;
