@@ -13,11 +13,12 @@ npm install negative
 ```javascript
 import negative from 'negative';
 // simple
-// return `entry.js dist.js --verbose -o output.js`
+// return `entry.js dist.js --verbose -o output.js --no-quiet`
 negative({
   _: ['entry.js'],
   verbose: true,
-  o: 'output.js'
+  o: 'output.js',
+  noQuiet: true
 });
 // with a command prefix
 // return `mocha test.js --require babel-core/registry`

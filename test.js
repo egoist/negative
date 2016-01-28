@@ -5,7 +5,9 @@ test('main', t => {
   const cli = {
     _: ['init', 'hello'],
     x: 3,
-    verbose: true
+    verbose: true,
+    noQuiet: true
   };
-  t.same(negative(cli, 'mocha'), 'mocha init hello -x 3 --verbose');
+  console.log(negative(cli))
+  t.same(negative(cli, 'mocha'), 'mocha init hello -x 3 --verbose --no-quiet');
 });

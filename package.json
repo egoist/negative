@@ -1,6 +1,6 @@
 {
   "name": "negative",
-  "version": "0.0.13",
+  "version": "0.0.2",
   "description": "Parse object to cli arguments.",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/egoist/negative#readme",
   "devDependencies": {
-    "ava": "^0.7.0"
+    "ava": "^0.10.0"
+  },
+  "dependencies": {
+    "camel2kebab": "0.0.2"
   }
 }
